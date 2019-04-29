@@ -43,7 +43,7 @@ public class MainActivity extends AppCompatActivity {
         recyclerView.setLayoutManager(ll);
         recyclerView.setAdapter(recyclerAdapter);
 
-        HeaderDecoration headerDecoration = new HeaderDecoration(positionList,0,true, new HeaderDecoration.SectionCallback() {
+        HeaderDecoration headerDecoration = new HeaderDecoration(0,true, new HeaderDecoration.SectionCallback() {
             @Override
             public boolean inSection(int position) {
 
