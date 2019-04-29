@@ -18,7 +18,6 @@ public class HeaderDecoration extends RecyclerView.ItemDecoration {
     private final int headerOffset;
     private final boolean sticky;
     private final SectionCallback sectionCallback;
-    private ArrayList<Integer> bottomPositions;
 
     private View headerView;
     private TextView header;
@@ -29,9 +28,8 @@ public class HeaderDecoration extends RecyclerView.ItemDecoration {
         String getSectionHeader(int position);
     }
 
-    public HeaderDecoration(ArrayList<Integer> bottomPositions, int headerHeight, boolean sticky, @NonNull SectionCallback sectionCallback)
+    public HeaderDecoration(int headerHeight, boolean sticky, @NonNull SectionCallback sectionCallback)
     {
-        this.bottomPositions = bottomPositions;
         headerOffset = headerHeight;
         this.sticky = sticky;
         this.sectionCallback = sectionCallback;
